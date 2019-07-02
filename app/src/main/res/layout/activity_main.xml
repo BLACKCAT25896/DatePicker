@@ -6,28 +6,74 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Date"
-        android:gravity="center"
-        android:layout_marginTop="200dp"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        android:id="@+id/dateTV"/>
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="DatePicker"
-        android:textAllCaps="false"
-        android:textColor="#fff"
-        android:layout_marginTop="10dp"
-        android:background="@color/colorPrimary"
-        android:layout_margin="10dp"
-        android:textStyle="bold"
-        android:id="@+id/datePickerBtn"
-        />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:layout_margin="10dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:id="@+id/dateTV"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DatePicker"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary"
+                android:textStyle="bold"
+                android:id="@+id/datePickerBtn"
+                />
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Time"
+                android:layout_margin="10dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:id="@+id/timeTV"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TimePicker"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary"
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+                android:id="@+id/timePickerBtn"
+                />
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
 
 
 </LinearLayout>
